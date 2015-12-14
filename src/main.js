@@ -8,7 +8,7 @@ var document = require('global/document'),
 
 
 window.register = function (form) {
-    jsonp(form.getAttribute('action') + '&' + serialize(form), {
+    jsonp('//crushingpennies.us12.list-manage.com/subscribe/post-json?u=1ad2313c80a66d742a9a602c0&id=ca39584e05&' + serialize(form), {
         param: 'c'
     }, function (err, response) {
         var node = document.getElementById('form-msg')
@@ -21,8 +21,11 @@ window.register = function (form) {
             elementClass(node).add('error')
         }
         else {
-            elementClass(node).remove('error')
             node.innerHTML = response.msg
+            elementClass(node).remove('error')
+            var emailNode = document.getElementById('mce-EMAIL')
+            emailNode.blur()
+            emailNode.value = ''
         }
         elementClass(node).remove('hidden')
     })
