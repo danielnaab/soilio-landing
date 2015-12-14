@@ -2,6 +2,9 @@
 
 This is the "coming soon" landing page for [soil.io](http://soil.io).
 
+A short post on this repository may be
+[read here](http://blog.crushingpennies.com/creating-a-landing-page-with-npm-scripts.html).
+
 ## Install
 
 ```shell
