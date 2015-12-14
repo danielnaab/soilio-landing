@@ -9,6 +9,10 @@ a {
     color: #444F2A;
 }
 
+.hidden {
+    display: none;
+}
+
 .hero {
     background-image: url('images/background.jpg');
     display: block;
@@ -75,6 +79,14 @@ a {
             background-color: #efe464;
             border: none;
         }
+    }
+}
+
+#form-msg {
+    background-color: #efe464;
+    padding: .5em;
+    &.error {
+        background-color: #ff9494;
     }
 }
 

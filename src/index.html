@@ -6,6 +6,7 @@
         <meta name="description" content="Soil.io is coming soon">
         <meta name="author" content="Daniel Naab">
         <link rel="stylesheet" href="styles.css">
+        <script src="bundle.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,7 +25,8 @@
             </div>
         </div>
         <div class="signup-form">
-            <form action="//crushingpennies.us12.list-manage.com/subscribe/post?u=1ad2313c80a66d742a9a602c0&amp;id=ca39584e05" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <form action="//crushingpennies.us12.list-manage.com/subscribe/post-json?u=1ad2313c80a66d742a9a602c0&id=ca39584e05" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate onsubmit="window.register(this); return false;">
+                <div id="form-msg" class="hidden"></div>
                 <div>
                     <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email address">
                 </div>
