@@ -15,7 +15,7 @@
   "scripts": {
     "build": "npm run clean && parallelshell 'npm run build:js' 'npm run build:sass' 'npm run build:images' && npm run build:html",
     "build:html": "cat src/index.html | html-inline --ignore-images -b dist > dist/index.html",
-    "build:images": "imagemin src/images/* dist/images",
+    "build:images": "imagemin -p -o 7 src/images/* dist/images",
     "build:js": "browserify src/main.js | uglifyjs -cm > dist/bundle.js",
     "build:sass": "node-sass --include-path scss src/styles/styles.scss | uglifycss > dist/styles.css",
     "clean": "rm -rf dist && mkdir dist",
