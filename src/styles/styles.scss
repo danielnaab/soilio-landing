@@ -101,3 +101,12 @@ footer {
         height: 22em;
     }
 }
+
+@media (max-device-width: 400px) {
+    .hero {
+        height: calc(100vh - 14.4em);
+    }
+    footer {
+        font-size: 1.5em;
+    }
+}
