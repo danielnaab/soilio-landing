@@ -70,12 +70,16 @@ a {
             padding: .2em;
         }
         input {
-            font-size: 1.4em;
-            width: 11em;
+            width: 12em;
             text-align: center;
             padding: .2em;
+            margin: 0;
+        }
+        input[type=email] {
+            font-size: 1.3em;
         }
         input[type=submit] {
+            font-size: 1.4em;
             background-color: #efe464;
             border: none;
         }
