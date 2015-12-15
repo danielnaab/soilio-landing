@@ -89,6 +89,12 @@ a {
 #form-msg {
     background-color: #efe464;
     padding: .5em;
+    max-width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .2em;
+    line-height: 1.2em;
     &.error {
         background-color: #ff9494;
     }
