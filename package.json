@@ -47,7 +47,7 @@
     "imagemin-cli": "^2.0.0",
     "jsonp": "^0.2.0",
     "main-loop": "^3.2.0",
-    "node-sass": "^3.4.2",
+    "node-sass": "^4.14.1",
     "node-version-assets": "^1.0.1",
     "nodemon": "^1.8.1",
     "parallelshell": "^3.0.1",
